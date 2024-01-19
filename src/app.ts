@@ -2,9 +2,14 @@ import express, { Request, Response } from "express";
 import { Burrito } from "./models/Burrito";
 import { Order } from "./models/Order";
 import { OrderItem } from "./models/OrderItem";
+import { authenticate } from "./middleware/authenticate";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 app.use(express.json());
+
+app.use("/api/orders", authenticate);
 
 let burritos: Burrito[] = [
   { id: 1, name: "Chicken Burrito", size: "regular", price: 3, options: [] },
