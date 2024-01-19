@@ -1,6 +1,7 @@
 import express from "express";
 import { Burrito } from "./models/Burrito";
 import { Order } from "./models/Order";
+import { OrderItem } from "./models/OrderItem";
 
 const app = express();
 app.use(express.json());
@@ -22,7 +23,8 @@ app.post("/api/orders", (req, res) => {
     id: nextOrderId++,
     items: req.body.items,
     totalCost: req.body.items.reduce(
-      (acc, item) => acc + item.burrito.price * item.quantity,
+      (acc: number, item: OrderItem) =>
+        acc + item.burrito.price * item.quantity,
       0
     ),
   };
