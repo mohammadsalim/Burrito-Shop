@@ -1,0 +1,29 @@
+# Dependency directories
+node_modules/
+
+# TypeScript compiled code
+dist/
+
+# Environment configuration
+.env
+.env.*
+
+# MacOS system files
+.DS_Store
+
+# Cache files
+.cache
+
+# Coverage directory used by tools like Istanbul
+coverage/
+
+# Log files
+logs/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Temporary files
+tmp/
+temp/
