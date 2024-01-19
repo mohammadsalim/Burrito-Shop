@@ -21,7 +21,7 @@ A step-by-step series of examples that tell you how to get a development environ
 1. **Clone the Repository**
 
    ```
-   git clone https://github.com/your-username/burrito-shop.git
+   git clone https://github.com/mohammadsalim/burrito-shop.git
    cd burrito-shop
    ```
 
@@ -51,9 +51,9 @@ A step-by-step series of examples that tell you how to get a development environ
 
 To run the application locally:
 
-    ```
-    npm start
-    ```
+```
+npm start
+```
 
 This will start the server on `http://localhost:3000`.
 
@@ -77,9 +77,9 @@ To run the application using Docker:
 
 To run the tests:
 
-    ```
-    npm test
-    ```
+```
+npm test
+```
 
 This will execute the test suites defined in the project.
 
